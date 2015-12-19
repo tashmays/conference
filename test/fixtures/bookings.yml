@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  creator: MyString
+  attendees: MyString
+  date: 2015-12-19
+  time: 2015-12-19 09:45:24
+  duration: MyString
+  room_id: 1
+
+two:
+  title: MyString
+  creator: MyString
+  attendees: MyString
+  date: 2015-12-19
+  time: 2015-12-19 09:45:24
+  duration: MyString
+  room_id: 1

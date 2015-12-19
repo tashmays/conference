@@ -1,0 +1,652 @@
+<html>
+<head>
+	<title>Bookit!</title>
+</head>
+<body>
+	<h3>Saturday, December 19, 2015</h3>
+	<table>
+		<thead>
+			<tr>
+				<td>Hours</td>
+				<td>The Garage Room</td>
+				<td>Northside Room</td>
+				<td>Southside Room</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>6:00 AM</td>
+				<td>
+						<% if @bookings.where(time: '6:00 AM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '6:00 AM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+							<%= link_to 'View', booking_path(booking[:id]) %>
+							<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id]), method: :delete %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '6:00 AM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '6:00 AM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '6:00 AM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '6:00 AM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>7:00 AM</td>
+				<td>
+						<% if @bookings.where(time: '7:00 AM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '7:00 AM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '7:00 AM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '7:00 AM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '7:00 AM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '7:00 AM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>8:00 AM</td>
+				<td>
+						<% if @bookings.where(time: '8:00 AM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '8:00 AM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '8:00 AM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '8:00 AM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '8:00 AM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '8:00 AM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>9:00 AM</td>
+				<td>
+						<% if @bookings.where(time: '9:00 AM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '9:00 AM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '9:00 AM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '9:00 AM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '9:00 AM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '9:00 AM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>10:00 AM</td>
+				<td>
+						<% if @bookings.where(time: '10:00 AM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '10:00 AM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '10:00 AM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '10:00 AM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '10:00 AM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '10:00 AM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>11:00 AM</td>
+				<td>
+						<% if @bookings.where(time: '11:00 AM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '11:00 AM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '11:00 AM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '11:00 AM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '11:00 AM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '11:00 AM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>12:00 PM</td>
+				<td>
+						<% if @bookings.where(time: '12:00 PM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '12:00 PM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '12:00 PM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '12:00 PM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '12:00 PM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '12:00 PM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>1:00 PM</td>
+				<td>
+						<% if @bookings.where(time: '1:00 PM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '1:00 PM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '1:00 PM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '1:00 PM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '1:00 PM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '1:00 PM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>2:00 PM</td>
+				<td>
+						<% if @bookings.where(time: '2:00 PM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '2:00 PM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '2:00 PM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '2:00 PM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '2:00 PM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '2:00 PM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>3:00 PM</td>
+				<td>
+						<% if @bookings.where(time: '3:00 PM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '3:00 PM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '3:00 PM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '3:00 PM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '3:00 PM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '3:00 PM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>4:00 PM</td>
+				<td>
+						<% if @bookings.where(time: '4:00 PM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '4:00 PM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '4:00 PM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '4:00 PM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '4:00 PM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '4:00 PM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>5:00 PM</td>
+				<td>
+						<% if @bookings.where(time: '5:00 PM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '5:00 PM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '5:00 PM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '5:00 PM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '5:00 PM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '5:00 PM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>6:00 PM</td>
+				<td>
+						<% if @bookings.where(time: '6:00 PM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '6:00 PM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '6:00 PM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '6:00 PM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '6:00 PM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '6:00 PM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+			<tr>
+				<td>7:00 PM</td>
+				<td>
+						<% if @bookings.where(time: '7:00 PM', room_id: 2).count != 0 %>
+							<% booking = @bookings.where(time: '7:00 PM', room_id: 2).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '7:00 PM', room_id: 4).count != 0 %>
+							<% booking = @bookings.where(time: '7:00 PM', room_id: 4).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+				<td>
+						<% if @bookings.where(time: '7:00 PM', room_id: 3).count != 0 %>
+							<% booking = @bookings.where(time: '7:00 PM', room_id: 3).first %>
+							<%= booking.title %>
+							<br />
+					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
+					  	<br />
+					  	<%= link_to 'Delete', booking_path(booking[:id], method: :delete) %>
+					  <% else %>
+					  	<%= link_to 'New', new_booking_path %>
+					  <% end %>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+</body>
+</html>
