@@ -3,7 +3,9 @@
 	<title>Bookit!</title>
 </head>
 <body>
-	<h3>Saturday, December 19, 2015</h3>
+	<h3><b> < </b> Saturday December 19, 2015 <b> > </b></h3>
+	<div class='show_info'></div>
+
 	<table>
 		<thead>
 			<tr>
@@ -21,7 +23,7 @@
 							<% booking = @bookings.where(time: '6:00 AM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-							<%= link_to 'View', booking_path(booking[:id]) %>
+							<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 							<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -35,7 +37,7 @@
 							<% booking = @bookings.where(time: '6:00 AM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -49,7 +51,7 @@
 							<% booking = @bookings.where(time: '6:00 AM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -66,7 +68,7 @@
 							<% booking = @bookings.where(time: '7:00 AM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -80,7 +82,7 @@
 							<% booking = @bookings.where(time: '7:00 AM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -94,7 +96,7 @@
 							<% booking = @bookings.where(time: '7:00 AM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -111,7 +113,7 @@
 							<% booking = @bookings.where(time: '8:00 AM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -125,7 +127,7 @@
 							<% booking = @bookings.where(time: '8:00 AM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -139,7 +141,7 @@
 							<% booking = @bookings.where(time: '8:00 AM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -156,7 +158,7 @@
 							<% booking = @bookings.where(time: '9:00 AM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -170,7 +172,7 @@
 							<% booking = @bookings.where(time: '9:00 AM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -184,7 +186,7 @@
 							<% booking = @bookings.where(time: '9:00 AM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -201,7 +203,7 @@
 							<% booking = @bookings.where(time: '10:00 AM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -215,7 +217,7 @@
 							<% booking = @bookings.where(time: '10:00 AM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -229,7 +231,7 @@
 							<% booking = @bookings.where(time: '10:00 AM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -246,7 +248,7 @@
 							<% booking = @bookings.where(time: '11:00 AM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -260,7 +262,7 @@
 							<% booking = @bookings.where(time: '11:00 AM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -274,7 +276,7 @@
 							<% booking = @bookings.where(time: '11:00 AM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -291,7 +293,7 @@
 							<% booking = @bookings.where(time: '12:00 PM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -305,7 +307,7 @@
 							<% booking = @bookings.where(time: '12:00 PM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -319,7 +321,7 @@
 							<% booking = @bookings.where(time: '12:00 PM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -336,7 +338,7 @@
 							<% booking = @bookings.where(time: '1:00 PM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -350,7 +352,7 @@
 							<% booking = @bookings.where(time: '1:00 PM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -364,7 +366,7 @@
 							<% booking = @bookings.where(time: '1:00 PM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -381,7 +383,7 @@
 							<% booking = @bookings.where(time: '2:00 PM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -395,7 +397,7 @@
 							<% booking = @bookings.where(time: '2:00 PM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -409,7 +411,7 @@
 							<% booking = @bookings.where(time: '2:00 PM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -426,7 +428,7 @@
 							<% booking = @bookings.where(time: '3:00 PM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -440,7 +442,7 @@
 							<% booking = @bookings.where(time: '3:00 PM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -454,7 +456,7 @@
 							<% booking = @bookings.where(time: '3:00 PM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -471,7 +473,7 @@
 							<% booking = @bookings.where(time: '4:00 PM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -485,7 +487,7 @@
 							<% booking = @bookings.where(time: '4:00 PM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -499,7 +501,7 @@
 							<% booking = @bookings.where(time: '4:00 PM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -516,7 +518,7 @@
 							<% booking = @bookings.where(time: '5:00 PM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -530,7 +532,7 @@
 							<% booking = @bookings.where(time: '5:00 PM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -544,7 +546,7 @@
 							<% booking = @bookings.where(time: '5:00 PM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -561,7 +563,7 @@
 							<% booking = @bookings.where(time: '6:00 PM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -575,7 +577,7 @@
 							<% booking = @bookings.where(time: '6:00 PM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -589,7 +591,7 @@
 							<% booking = @bookings.where(time: '6:00 PM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -606,7 +608,7 @@
 							<% booking = @bookings.where(time: '7:00 PM', room_id: 2).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -620,7 +622,7 @@
 							<% booking = @bookings.where(time: '7:00 PM', room_id: 4).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />
@@ -634,7 +636,7 @@
 							<% booking = @bookings.where(time: '7:00 PM', room_id: 3).first %>
 							<%= booking.title %>
 							<br />
-					  	<%= link_to 'View', booking_path(booking[:id]) %>
+					  	<%= link_to 'View', booking_path(booking[:id]), class:'booking_view' %>
 					  	<br />
 					  	<%= link_to 'Edit', edit_booking_path(booking[:id]) %>
 					  	<br />

@@ -1,7 +1,8 @@
 class BookingsController < ApplicationController
  
   def index
-  	@bookings = Booking.all
+  	@date = Date.today
+  	@bookings = Booking.where(date: @date)
   end
 
   def show
