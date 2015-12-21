@@ -57,6 +57,8 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+    font-awesome-sass (4.5.0)
+      sass (>= 3.2)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -72,6 +74,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    materialize-sass (0.97.3)
+      sass (~> 3.3)
     method_source (0.8.2)
     mime-types (2.99)
     mini_portile2 (2.0.0)
@@ -157,9 +161,10 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   byebug
-  coffee-rails (~> 4.1.0)
+  font-awesome-sass
   jbuilder (~> 2.0)
   jquery-rails
+  materialize-sass
   pg (~> 0.15)
   pry
   pry-byebug
