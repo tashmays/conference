@@ -36,7 +36,7 @@ class BookingsController < ApplicationController
   			render :edit
   		end
   	else
-  		raise		
+  		 render :edit		
   	end
   end
 
